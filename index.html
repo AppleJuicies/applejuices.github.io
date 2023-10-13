@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Bauhaus</title>
+    <link href='https://fonts.googleapis.com/css?family=Chivo Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Java.js" defer onload="init()"></script>
+</head>
+<body>
+    <svg class="mountain" xmlns="http://www.w3.org/2000/svg" viewBox="-600 -300 2400 1200">
+        <polygon class="poly" id="resume-poly" points="630,-200 1500,742 -264,800" fill="#EEE" stroke="#F5F5F5" stroke-width="1"/>
+        <polygon class="poly" id="projects-poly" points="518,20 818,20 1024,592 200,688" fill="#CCC" stroke="#F5F5F5" stroke-width="1"/>
+        <polygon class="poly" id="experience-poly" points="502,188 954,528 310,532" fill="#AAA" stroke="#F5F5F5" stroke-width="1"/>           
+        <polygon class="poly" id="life-poly" points="500,252 722,374 426,494" fill="#888" stroke="#F5F5F5" stroke-width="1"/>
+    </svg>
+
+    <div class="title">
+        <h1>Jesus' Home</h1>
+        <p>My Environment is Our Environment</p>
+    </div>  
+    
+    <div id="search-container" class="search-container">
+        <input type="text" placeholder="Search" id="search" onkeyup="searchFunction()">
+    </div>
+    
+    <div>
+        <button class="page-button" id="resume-button">Resume</button>   
+        <button class="page-button" id="projects-button">Projects</button>
+        <button class="page-button" id="life-button">Life</button>
+        <button class="page-button" id="experience-button">Experience</button>
+    </div>
+
+    <!-- <a href="#" class="text-box" id="intro-text" style="top: 150px; left: 0px;" fill="#000000">Hello! This is what I would call "my engineering story", look around! get to know the place! Get Cozy! I must implore that if you are a recruiter, WELCOME! super happy to have you, this bauhaus inspired concept of a website was meant to hold a bunch of my professional experience and personality. I really hope you enjoy it and have fun exploring this website that I put together and learning about me! I apologize in advance if you don't enjoy every aspect of it. To make you feel better about that, refresh the page and watch the colours change, hopefully that distracts you from a bug you may encounter.</a> -->
+
+
+
+<!--TEXT BOXESSSSS-->
+
+
+    <div class="content inactive" id="resume-content" data-search="resume">
+        <div class="text-box" id="page1-text1">
+            <a href="#">Formula Society of Automotive Engineers</a>
+            <ul>
+                <li>Designing the vehicle’s Welding jigs and various vital components using SolidWorks allowing for a more accurate master assembly
+                    improving the manufacturing quality due to well defined GD&T aspects which improves simulation accuracy by 10%.</li>
+                <li>Manufactured a muffler with integrated chambers to introduce destructive interference reducing sound below 103 decibels.</li>
+                <li>Used SolidWorks FEA  to conduct compressive loading simulation on the anti-intrusion plate measuring for deflection in various material structures to determine the optimal thickness that compromises between weight and cost which was achieved by 30% overall improvement.</li>
+                <li>Transport lead of FSAE ensuring timely arrivals, transport reliability, and an organized environment for the vehicle during transport.</li>
+                <li>Learning to weld and CNC machine parts for chasis manufacturing.</li>
+                <li>Preforming real time fixes to issues the become present during testing and racing.</li>
+            </ul>
+        </div>        
+        <div class="text-box" id="page1-text2">
+            <a href="#">Rehabilitation Engineering and Assistive Device Lab (REAL)</a>
+            <ul>
+                <li>Invented first ever muscle specific human leg replica using mechanical components while outlining DFM and DFA for testing.</li>
+                <li>Developed bracket system that eliminated counteractive torque from integrated torque sensor design, allowing reproducible and accurate 
+                    voltage outputs from applied forces to be read via CAN Bus by removing friction while refining stability in a leg replica.</li>
+                <li>Reduced higher-order polynomials using MATLAB and introduced function optimization to mitigate noise from data to model muscle 
+                    forces through springs accurately achieving a 1-to-1 replication in force between spring constants to human exponential  muscle forces.</li>
+                <li>Preforming real time fixes to issues the become present during testing.</li>
+            </ul>
+        </div>    
+        <div class="text-box" id="page1-text3">
+            <a href="#">Math Launch Program</a>
+            <ul>
+                <li>Exercising tutoring style that expands student questions into a general conceptual overview of a given subject.</li>
+                <li>Lead group tutoring sessions to maximize tutoring center efficiency during peak hours enhancing student efficiency by 50%.</li>
+                <li>Tutoring students with interactive lessons in college algebra, trigonometry, and pre-calculus and increased participation by 25%.</li>
+            </ul>
+        </div>
+        <div class="text-box" id="page1-text4">
+            <a href="#">LeaderShip</a>
+            <ul>
+                <li>Co-sub lead of FSAE powertrain with primary focus on refining intake design to reduce weight by 3% and satisfy aesthetics.</li>
+                <li>Leading SolidWorks workshops teaching key features of the program in order to increase pass rate of the CSWA by 25% per section.</li>
+                <li>Managing attendance, logistics, and documentation as the SHPE UCF site tours director allowing students to visit various companies.</li>
+            </ul>
+        </div>
+        <div class="text-box" id="page1-text5">
+            <a href="#">Useless Tools</a>
+            <ul>
+                <li>Built a useless wrench that fits no standard metric being either too large or too small for any bolt, circular ends with no 
+                    notches to ensure no grip in any case, all purposefully designed around a small moment arm to ensure difficulty of use in any case.</li>
+                <li>Devised a useless ruler with a cylinder-like shape preventing perfect zeroing, nonlinear distances, and gave the 
+                    measurement indicator notch uncertainty to make the middle of the indicator indistinguishable for an overall hard-to-read and use design.</li>
+                <li>Discussing ideal improvements to tools with FSAE community and designed tools opposite these preferences.</li>
+            </ul>
+        </div>
+        <div class="text-box" id="page1-text6">
+            <a href="#">Thirty in Thirty</a>
+            <ul>
+                <li>Conceptualized, printed, tested, and validated 30 use full items with principle driven designs in 30 days. 
+                    notches to ensure no grip in any case, all purposefully designed around a small moment arm to ensure difficulty of use in any case.</li>
+                <li>Designed a compliant mechanism imitating a chip bag clip, optimizing for strength of clip while increasing yield strength.</li>
+                <li>Developed an ergonomic and aesthetic watering jug with directional capabilities that uses dynamic pressure as a retention mechanism.</li>
+            </ul>
+        </div>   
+    </div>
+    
+    
+    <div class="content inactive" id="projects-content" data-search="projects">
+        <div class="text-box" id="page2-text1">
+            <a href="#">Compliant Mechanism Clip</a>
+            <ul>
+                <li>Larry L. Howell is a mechanical engineer who's focus is in compliant mechanisms and origami. </li>
+                    What is intresting about his work and research is the fundamental princinple behind what he does,
+                    imitating nature. Nature usually doesnt develop complex multi-parted verisons of their bodily components, for example, plants.
+                    they're made out of one piece and have integrated functions within its one part. I started reading his book and realized that I should give it
+                    a try due to the practice being quiet innovative and also beneficial to product development, less parts the better.
+                <li>Iterated a bag chip clip made out of one piece of PLA. </li>
+                <li>Adjusted thicknesses and manipulated compliant portion of design to an optimial width and curvature.</li>
+                <li>Finalized design based on deformation, strength, and practical displacement before reaching yield strength.</li>
+            </ul>
+        </div>    
+        <div class="text-box" id="page2-text2">
+            <a href="#">title</a>
+            <ul>
+                <li>point</li>
+            </ul>
+        </div> 
+    </div>
+    
+    
+    <div class="content inactive" id="experience" data-search="experience">
+        <div class="text-box" id="page3-text1">
+            <a href="#">title</a>
+            <ul>
+                <li>point</li>
+            </ul>
+        </div>    
+        <div class="text-box" id="page3-text2">
+            <a href="#">title</a>
+            <ul>
+                <li>point</li>
+            </ul>
+        </div> 
+    </div>
+    
+    
+    <div class="content inactive" id="life-content" data-search="life">
+        <div class="text-box" id="page4-text1">
+            <a href="#">Family</a>
+            <ul>
+                <li>My parents are immigrants, theres a lot to unpack there if im going to be honest.
+                    what you should know is that my father came to the united states with nothing, 
+                    submerged waist deep in water for about 3 days as he crossed a 90 mile stretch of nothing 
+                    to figure his life out somewhere he was free to do. my ma then made a similar 
+                    sacrifice leaving everything she had when my dad went back to Cuba, just go to get her,
+                    "youre either coming with me or we're done". If that doesnt describe my families mentality 
+                    I dont know what does. What im trying to get at is that if something is going to get done
+                    theres no time to waste, I only know two efforts, none or all. If my mind is set on something, 
+                    even if I dont know how to get there, ill figure.
+                </li>
+            </ul>
+        </div>    
+        <div class="text-box" id="page4-text2">
+            <a href="#">Mentality</a>
+            <ul>
+                <li>Personally, I think i'm delusionally optimistic and this may be an unpopular opinion, but I
+                    don't think it works against me like some people may think. It's important to be positive in
+                    my opinion. Though I would agree that it is also important to not get your hopes up to often.
+                    My positive mentality ties into my ambitions and my ultimate motivation, if you think good 
+                    energy and enact positive actions towards your goal, you will more than likely achieve it
+                    simple as that! A lot of frustration can be avoided by thinking positively, thinking negatively
+                    actaully wastes time, why try something if you know youll fail, I say, even if I fail, I told
+                    my self that there could be a chance I actually do something incredibly difficult, then, im either incredibly impressed
+                    by my actions, or not frustrated because I realized that I set quiet an ambitions goal which reasonably
+                    I couldn't achieve. All or none baby!</li>
+            </ul>
+        </div> 
+    </div>
+</body>
+</html>

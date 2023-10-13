@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #f5f5f5;
+    font-family: 'Chivo Mono', sans-serif;
+    perspective: 1000px;
+    transition: background-color .3s ease-in-out;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 70%;
+    padding: 20px;
+    background-color: rgba(29, 32, 68, 0);
+    text-align: top;
+}
+
+.mountain {
+    position: absolute;
+    top:0vh;
+    width: 100vw; /* Adjusted to make the mountain larger */
+    height: 100vh; /* Adjusted to make the mountain larger */
+    z-index: -1;
+}
+
+.title {
+    position: absolute;
+    left: 15vw;
+    top: 45vh;
+    width: 20vw;
+    transition: all .5s ease-in-out;
+}
+
+.page-button {
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+    filter: drop-shadow(0 0px 0px rgba(0, 0, 0, 1.0));
+    border-radius: 50px;
+    padding: 20px 60px;
+    border: 2px solid #f5f5f5;
+    color: rgba(0, 0, 0, 1);; /* This will be overridden by JavaScript */
+    text-decoration: none;
+    font-family: 'Chivo Mono', sans-serif;
+    font-size: 15px;
+    background-color: #f5f5f5; /* Set background color to white */
+}
+
+#resume-button {
+    position: absolute;
+    top: 15vh;
+    left: 47.8vw;
+}
+
+#experience-button{
+    position: absolute;
+    top: 63vh;
+    left:52vw;
+}
+
+#projects-button{
+    position: absolute;
+    top: 37vh;
+    left:52vw;
+}
+
+#life-button{
+    position: absolute;
+    top: 53vh;
+    left:45vw;
+}
+
+
+
+/*--------------------------*/
+/*TEXT BOXES INSIDE OF PAGES*/
+/*--------------------------*/
+
+
+
+#page1-text1{
+    position: absolute;
+    top: 37vh;
+    left:38vw;
+    font-size: 11px;
+    max-width: 300px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page1-text2{
+    position: absolute;
+    top: 40vh;
+    left:53vw;
+    font-size: 11px;
+    max-width: 300px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page1-text3{
+    position: absolute;
+    top: 11vw;
+    left:44.5vw;
+    font-size: 10px;
+    max-width: 300px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page1-text4{
+    position: absolute;
+    top: 64vh;
+    left:26vw;
+    font-size: 10px;
+    max-width: 300px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page1-text5{
+    position: absolute;
+    top: 65vh;
+    left:40vw;
+    font-size: 10px;
+    max-width: 300px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page1-text6{
+    position: absolute;
+    top: 66vh;
+    left:55vw;
+    font-size: 10px;
+    max-width: 300px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page2-text1{
+    position: absolute;
+    top: 53vh;
+    left:10vw;
+    font-size: 12px;
+    max-width: 450px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page2-text2{
+    position: absolute;
+    top: 53vh;
+    left:45vw;
+}
+
+#page3-text1{
+    position: absolute;
+    top: 53vh;
+    left:45vw;
+}
+
+#page3-text2{
+    position: absolute;
+    top: 53vh;
+    left:45vw;
+}
+
+#page4-text1{
+    position: absolute;
+    top: 5vh;
+    left:24vw;
+    font-size: 18px;
+    max-width: 1600px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page4-text2{
+    position: absolute;
+    top: 28vh;
+    left:20vw;
+    font-size: 13px;
+    max-width: 800px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+
+
+
+
+
+
+/*profiles of shapes with text*/
+
+.poly {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+body.fade {
+    background-color: #000000; /* Change to the color you want */
+    transition: background-color .3s ease-in-out;
+}
+
+.text-container {
+    position: absolute;
+    top: 57%; /* Instead of px */
+    left: 50%; /* Instead of px */
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust as needed */
+}
+
+.text-box {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 20px 60px;
+    position: relative;
+    border: 2px solid #f5f5f5;
+    color: rgba(0, 0, 0, 1);; /* This will be overridden by JavaScript */
+    text-decoration: none;
+    font-family: 'Chivo Mono', sans-serif;
+    font-size: 15px;
+    background-color: #f5f5f5; /* Set background color to white */
+    transition: color .3s ease-in-out, opacity .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+/* Search Container */
+
+.search-container {
+    position: absolute;
+    top: 2vh;
+    width: 20vw;
+    left:2%;
+    
+    background-color: transparent;  
+
+    z-index: 1;
+}
+
+#search {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid #000; /* Black border */
+    background-color: transparent; /* Transparent background */
+    color: #000; /* Black text */
+    outline: none; /* Remove outline */
+    border-radius: 15px; /* Rounded corners */
+}
+
+.search-container a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.search-container a .highlight {
+    background-color: rgba(0,0,0,0.2);
+    color: black;
+}
+
+#search::placeholder {
+    color: #000; /* Black placeholder text */
+    opacity: 0.5; /* Slightly transparent placeholder */
+}
+
+/* ... (other styles remain the same) */
+
+.page-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none; /* Allows clicking on visible elements */
+    visibility: hidden;
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    
+}
+
+.page-container.active {
+    opacity: 1;
+    display: block;
+    pointer-events: none; /* Allows clicking on visible elements */
+    visibility: visible;
+    transition: all .3s ease-in-out;
+    z-index: 999;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    text-shadow: -15px 20px 3px rgba(0, 0, 0, 0); /* Added shadow */
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+}
+
+/* Resume Content */
+
+.inactive {
+    opacity: 0;
+    pointer-events: none;
+}
