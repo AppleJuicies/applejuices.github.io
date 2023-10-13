@@ -39,7 +39,7 @@ body {
 
 .title2 {
     position: absolute;
-    left: 77vw;
+    left: 75vw;
     top: 45vh;
     width: 20vw;
     transition: all .5s ease-in-out;
@@ -61,7 +61,7 @@ body {
 
 #resume-button {
     position: absolute;
-    top: 20vh;
+    top:18vh;
     left: 47.8vw;
 }
 
@@ -169,8 +169,8 @@ body {
 
 #page2-text1{
     position: absolute;
-    top: 53vh;
-    left:10vw;
+    top: 17vh;
+    left:5vw;
     font-size: 12px;
     max-width: 450px; /* or any value you prefer */
     max-height: 300px; /* or any value you prefer */
@@ -180,8 +180,35 @@ body {
 
 #page2-text2{
     position: absolute;
-    top: 53vh;
-    left:45vw;
+    top: 42vh;
+    left:5vw;
+    font-size: 12px;
+    max-width: 450px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page2-text3{
+    position: absolute;
+    top: 58vh;
+    left:5vw;
+    font-size: 12px;
+    max-width: 450px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
+}
+
+#page2-text4{
+    position: absolute;
+    top: 75vh;
+    left:5vw;
+    font-size: 12px;
+    max-width: 450px; /* or any value you prefer */
+    max-height: 300px; /* or any value you prefer */
+    overflow: auto; /* adds scrollbar to the box if the content overflows */
+    padding: 15px 20px;
 }
 
 #page3-text1{
