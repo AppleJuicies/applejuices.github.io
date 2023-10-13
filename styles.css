@@ -39,7 +39,7 @@ body {
 
 .title2 {
     position: absolute;
-    left: 75vw;
+    left: 77vw;
     top: 45vh;
     width: 20vw;
     transition: all .5s ease-in-out;
@@ -61,7 +61,7 @@ body {
 
 #resume-button {
     position: absolute;
-    top: 18.5vh;
+    top: 20vh;
     left: 47.8vw;
 }
 
@@ -93,30 +93,30 @@ body {
 
 #page1-text1{
     position: absolute;
-    top: 40vh;
-    left:36.5vw;
+    top: 44vh;
+    left:35vw;
     font-size: 11px;
     max-width: 300px; /* or any value you prefer */
-    max-height: 300px; /* or any value you prefer */
+    max-height: 250px; /* or any value you prefer */
     overflow: auto; /* adds scrollbar to the box if the content overflows */
     padding: 15px 20px;
 }
 
 #page1-text2{
     position: absolute;
-    top: 40vh;
-    left:53vw;
+    top: 44vh;
+    left:54vw;
     font-size: 11px;
     max-width: 300px; /* or any value you prefer */
-    max-height: 300px; /* or any value you prefer */
+    max-height: 250px; /* or any value you prefer */
     overflow: auto; /* adds scrollbar to the box if the content overflows */
     padding: 15px 20px;
 }
 
 #page1-text3{
     position: absolute;
-    top: 12vw;
-    left:44.5vw;
+    top: 13.5vw;
+    left:45vw;
     font-size: 11px;
     max-width: 300px; /* or any value you prefer */
     max-height: 300px; /* or any value you prefer */
