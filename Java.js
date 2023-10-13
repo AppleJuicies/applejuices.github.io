@@ -31,6 +31,7 @@ function resetPage() {
     });
 
     document.getElementsByClassName('title')[0].classList.remove('inactive');
+    document.getElementsByClassName('title2')[0].classList.remove('inactive');
     
 
     availableColors = [
