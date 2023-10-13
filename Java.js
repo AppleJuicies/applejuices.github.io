@@ -31,6 +31,7 @@ function resetPage() {
     });
 
     document.getElementsByClassName('title')[0].classList.remove('inactive');
+    
 
     availableColors = [
         "#001219", "#005f73", "#0a9396", "#94d2bd", 
@@ -114,6 +115,7 @@ function init() {
             buttonElement.innerText = 'Home';
 
             document.getElementsByClassName('title')[0].classList.add('inactive');
+            document.getElementsByClassName('title2')[0].classList.add('inactive');
 
             document.querySelectorAll('.poly').forEach(function(otherPolygon) {
                 if (otherPolygon !== polygon){
