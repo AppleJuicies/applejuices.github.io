@@ -61,7 +61,7 @@ body {
 
 #resume-button {
     position: absolute;
-    top: 17vh;
+    top: 18.5vh;
     left: 47.8vw;
 }
 
@@ -115,7 +115,7 @@ body {
 
 #page1-text3{
     position: absolute;
-    top: 11.5vw;
+    top: 12vw;
     left:44.5vw;
     font-size: 11px;
     max-width: 300px; /* or any value you prefer */
