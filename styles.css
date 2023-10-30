@@ -217,7 +217,7 @@ body {
     left:5vw;
     font-size: 12px;
     max-width: 450px; /* or any value you prefer */
-    max-height: 300px; /* or any value you prefer */
+    max-height: 200px; /* or any value you prefer */
     overflow: auto; /* adds scrollbar to the box if the content overflows */
     padding: 10px 15px;
 }
@@ -241,7 +241,7 @@ body {
     left:25vw;
     font-size: 12px;
     max-width: 450px; /* or any value you prefer */
-    max-height: 300px; /* or any value you prefer */
+    max-height: 225px; /* or any value you prefer */
     overflow: auto; /* adds scrollbar to the box if the content overflows */
     padding: 10px 15px;
 }
@@ -253,7 +253,7 @@ body {
     left:25vw;
     font-size: 12px;
     max-width: 450px; /* or any value you prefer */
-    max-height: 300px; /* or any value you prefer */
+    max-height: 200px; /* or any value you prefer */
     overflow: auto; /* adds scrollbar to the box if the content overflows */
     padding: 10px 15px;
 }
